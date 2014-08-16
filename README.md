@@ -11,9 +11,9 @@ Though that is iff the url does not direct to an image.
 Implementation is simple:
 
 	table = [[SLTableView alloc] initWithFrame:CGRectMake(0, 100, self.view.frame.size.width, self.view.frame.size.height - 100)];
-		[self.view addSubview:table];
+	[self.view addSubview:table];
     
-    [table loadData];
+   	[table loadData];
     
     
     

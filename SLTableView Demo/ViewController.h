@@ -7,7 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import "SLTableView.h"
 @interface ViewController : UIViewController
+{
+    SLTableView *table;
+
+    
+}
+- (IBAction)refresh:(id)sender;
 
 @end

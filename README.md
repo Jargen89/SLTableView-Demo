@@ -19,3 +19,5 @@ Implementation is simple:
     
     
 Further work includes changing the inits to include an (id) parameter for the UIViewController the SLTableView is in, so navigation to a separate WebView Controller can be implemented
+
+Also going to change sources from /r/pics to imgur.com

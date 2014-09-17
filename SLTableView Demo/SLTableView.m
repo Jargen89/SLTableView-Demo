@@ -82,8 +82,9 @@
 }
 
 -(void) tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
-    //[self beginUpdates];
-    //[self endUpdates];
+    [self beginUpdates];
+    [self endUpdates];
+    /*
     [[UIApplication sharedApplication] setNetworkActivityIndicatorVisible:YES];
     RedditPost *post = [content objectAtIndex:indexPath.row];
     __block UIImageView *imageView;
@@ -105,7 +106,7 @@
             [[UIApplication sharedApplication] setNetworkActivityIndicatorVisible:NO];
         });
         
-    });
+    });*/
     
     
 }
@@ -113,9 +114,9 @@
     
     CGRect rect = [[[content objectAtIndex:indexPath.row] title] boundingRectWithSize:CGSizeMake(320, 1000) options:NSStringDrawingUsesLineFragmentOrigin attributes:@{NSFontAttributeName:[UIFont fontWithName:@"Helvetica" size:15.0]} context:nil];
     CGFloat value = 44 + rect.size.height;
-    //if (indexPath.row == [tableView indexPathForSelectedRow].row) {
-    //    value += 100;
-    //}
+    if (indexPath.row == [tableView indexPathForSelectedRow].row) {
+        value += 100;
+    }
     return value;
 }
 - (void)loadData {
